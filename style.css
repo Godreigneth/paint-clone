@@ -143,3 +143,12 @@ body {
   cursor: pointer;
   outline: none;
 }
+
+/* Canvas */
+canvas#canvas {
+  background-color: rgb(177, 177, 177);
+  position: absolute;
+  top: 50px;
+  cursor: crosshair;
+  z-index: 10;
+}
