@@ -43,3 +43,10 @@ brushColorBtn.addEventListener('change', () => {
   isEraser = false;
   currentColor = `#${brushColorBtn.value}`;
 });
+
+// Setting Background Color
+bucketColorBtn.addEventListener('change', () => {
+  bucketColor = `#${bucketColorBtn.value}`;
+  createCanvas();
+  restoreCanvas();
+});
