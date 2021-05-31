@@ -141,3 +141,20 @@ canvas.addEventListener('mousedown', (event) => {
   context.strokeStyle = currentColor;
 });
 
+// Mouse Move
+canvas.addEventListener('mousemove', (event) => {
+  if (isMouseDown) {
+    const currentPosition = getMousePosition(event);
+    context.lineTo(currentPosition.x, currentPosition.y);
+    context.stroke();
+    storeDrawn(
+      currentPosition.x,
+      currentPosition.y,
+      currentSize,
+      currentColor,
+      isEraser,
+    );
+  } else {
+    storeDrawn(undefined);
+  }
+});
