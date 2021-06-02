@@ -202,3 +202,6 @@ downloadBtn.addEventListener('click', () => {
   activeToolEl.textContent = 'Image File Saved';
   setTimeout(switchToBrush, 1500);
 });
+
+// Event Listener
+brushIcon.addEventListener('click', switchToBrush);
