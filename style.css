@@ -16,7 +16,7 @@ body {
   height: 50px;
   width: 100%;
   position: fixed;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.856);
   display: flex;
   justify-content: center;
 }
